@@ -71,7 +71,7 @@ jobs:
         run: |
           git submodule update --init
           cd cimgui
-          git checkout tags/${{ needs.compare-tags.outputs.new-tag }}
+          git checkout docking_inter
           git submodule update --init
       
       - name: Prepare cimgui
